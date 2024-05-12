@@ -1,9 +1,10 @@
 package com.example.to_do_app
-import NotesDatabaseHelper
+
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import com.example.to_do_app.databinding.ActivityUpdateNoteBinding
+
 
 class UpdateNoteActivity : AppCompatActivity() {
 
@@ -25,7 +26,7 @@ class UpdateNoteActivity : AppCompatActivity() {
 
         val note=db.getNoteByID(noteId)
         binding.updateTitleEditText.setText(note.title)
-        binding.updateTitleEditText.setText(note.content)
+        binding.updateContentEditText.setText(note.content)
 
         binding.updateSaveButton.setOnClickListener {
             val newTitle=binding.updateTitleEditText.text.toString()

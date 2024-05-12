@@ -1,10 +1,10 @@
 package com.example.to_do_app
 
-import NotesDatabaseHelper
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.to_do_app.databinding.ActivityAddNoteBinding
+
 
 class AddNoteActivity : AppCompatActivity() {
 
